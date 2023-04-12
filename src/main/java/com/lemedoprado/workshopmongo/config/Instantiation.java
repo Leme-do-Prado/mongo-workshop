@@ -3,6 +3,7 @@ package com.lemedoprado.workshopmongo.config;
 import java.util.Arrays;
 
 import org.springframework.boot.CommandLineRunner;
+import org.springframework.context.annotation.Configuration;
 
 import com.lemedoprado.workshopmongo.domain.User;
 import com.lemedoprado.workshopmongo.repositories.UserRepository;
