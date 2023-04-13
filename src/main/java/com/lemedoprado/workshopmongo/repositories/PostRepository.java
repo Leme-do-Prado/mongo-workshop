@@ -1,5 +1,5 @@
 package com.lemedoprado.workshopmongo.repositories;
 
-public interface PostRepository {
+public interface PostRepository extends MongoRepository<Post, String>{
 
 }
