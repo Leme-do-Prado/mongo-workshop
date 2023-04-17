@@ -1,5 +1,6 @@
 package com.lemedoprado.workshopmongo.repositories;
 
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
@@ -12,5 +13,7 @@ public interface PostRepository extends MongoRepository<Post, String>{
 	List<Post> searchTitle(String text);
 	
 	List<Post> findByTitleContainingIgnoreCase(String text);
+	
+	List<Post> fullSearch(String text, Date minDate, Date maxDate);
 	
 }
